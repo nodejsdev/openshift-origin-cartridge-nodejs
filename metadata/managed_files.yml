@@ -1,3 +1,2 @@
----
 processed_templates:
 - '**/*.erb'
