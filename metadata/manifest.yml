@@ -98,7 +98,7 @@ Endpoints:
     Mappings:
       - Frontend:      ""
         Backend:       ""
-        Options:       { noproxy: true }
+        Options:       { websocket: true }
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
@@ -106,6 +106,7 @@ Endpoints:
     Private-Port-Name: EXTRA_PORT
     Private-Port:      15100
     Public-Port-Name:  EXTRA_PROXY_PORT
+    Options:           { "ssl_to_gear": true }
 Version-Overrides:
   '0.6':
     Display-Name: NodeJS 0.6
