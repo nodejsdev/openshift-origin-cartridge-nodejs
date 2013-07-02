@@ -98,11 +98,11 @@ Endpoints:
     Mappings:
       - Frontend:      ""
         Backend:       ""
-        Options:       { websocket: true }
+        Options:       { noproxy: true }
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
-  - Private-IP-Name:   IP
+  - Private-IP-Name:   EXTRA_IP
     Private-Port-Name: EXTRA_PORT
     Private-Port:      15100
     Public-Port-Name:  EXTRA_PROXY_PORT
